@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1>Weather Dashboard</h1>
+  </header>
+  <main>
+    <div class="container">
+      <section class="weather-input" aria-labelledby="input-section-title">
+        <h2 id="input-section-title">Enter a City Name</h2>
+        <input class="city-input" type="text" placeholder="E.g. New York, Tokyo" aria-label="City Name">
+        <button class="search-btn" aria-label="Search for city weather">Search</button>
+        <div class="separator"></div>
+        <button class="location-btn" aria-label="Use current location"><i class="fas fa-map-marker-alt"></i> Use Current Location</button>
+      </section>
+      <section class="weather-data" aria-labelledby="weather-data-title">
+        <div class="current-weather">
+          <div class="details">
+            <h2 id="weather-data-title">Current Weather</h2>
+            <h3>City Name ( Country )</h3>
+            <h6>Temperature: __°C</h6>
+            <h6>Wind: __ m/s</h6>
+            <h6>Humidity: __%</h6>
+          </div>
+        </div>
+        <div class="days-forecast">
+          <h2>5-Day Forecast</h2>
+          <ul class="weather-cards" aria-labelledby="forecast-title">
+            <li class="card" aria-label="Day 1 forecast">
+              <h3>Day 1 ( Date )</h3>
+              <h6>Temp: __°C</h6>
+              <h6>Wind: __ m/s</h6>
+              <h6>Humidity: __%</h6>
+            </li>
+            <li class="card" aria-label="Day 2 forecast">
+              <h3>Day 2 ( Date )</h3>
+              <h6>Temp: __°C</h6>
+              <h6>Wind: __ m/s</h6>
+              <h6>Humidity: __%</h6>
+            </li>
+            <li class="card" aria-label="Day 3 forecast">
+              <h3>Day 3 ( Date )</h3>
+              <h6>Temp: __°C</h6>
+              <h6>Wind: __ m/s</h6>
+              <h6>Humidity: __%</h6>
+            </li>
+            <li class="card" aria-label="Day 4 forecast">
+              <h3>Day 4 ( Date )</h3>
+              <h6>Temp: __°C</h6>
+              <h6>Wind: __ m/s</h6>
+              <h6>Humidity: __%</h6>
+            </li>
+            <li class="card" aria-label="Day 5 forecast">
+              <h3>Day 5 ( Date )</h3>
+              <h6>Temp: __°C</h6>
+              <h6>Wind: __ m/s</h6>
+              <h6>Humidity: __%</h6>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
